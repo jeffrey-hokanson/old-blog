@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Applying Math</title><link href="/" rel="alternate"></link><link href="/feeds/jeffrey-m-hokanson.atom.xml" rel="self"></link><id>/</id><updated>2014-06-27T16:00:00-05:00</updated><entry><title>First Post</title><link href="/blog/2014/06/27/memoryview-benchmarks/" rel="alternate"></link><updated>2014-06-27T16:00:00-05:00</updated><author><name>Jeffrey M. Hokanson</name></author><id>tag:,2014-06-27:blog/2014/06/27/memoryview-benchmarks/</id><summary type="html">&lt;hr /&gt;
-
-
-&lt;p&gt;This is my first post.&lt;/p&gt;
-</summary></entry><entry><title>Demonstrating IPython Interactive Features Using K-Means</title><link href="/blog/2014/06/27/k-means-test/" rel="alternate"></link><updated>2014-06-27T00:00:00-05:00</updated><author><name>Jeffrey M. Hokanson</name></author><id>tag:,2014-06-27:blog/2014/06/27/k-means-test/</id><summary type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Applying Math</title><link href="/" rel="alternate"></link><link href="/feeds/jeffrey-m-hokanson.atom.xml" rel="self"></link><id>/</id><updated>2014-06-27T00:00:00-05:00</updated><entry><title>Demonstrating IPython Interactive Features Using K-Means</title><link href="/blog/2014/06/27/k-means-test/" rel="alternate"></link><updated>2014-06-27T00:00:00-05:00</updated><author><name>Jeffrey M. Hokanson</name></author><id>tag:,2014-06-27:blog/2014/06/27/k-means-test/</id><summary type="html">&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;small&gt; You may download this notebook &lt;a href="http://jeffrey-hokanson.github.io/downloads/notebooks/K-Means.ipynb"&gt;here&lt;/a&gt;.&lt;/small&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
@@ -4186,7 +4191,7 @@ CF3IgBMEQXgUMuAEQRAehQw4QRCERyEDThAE4VHIgBMEQXgUMuAEQRAehQw4QRCER/n/AalgDQiN
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;An interesting feature that emerges with this interactive demo is that k-means fails to find three clusters.  With random starting values, it can fall into a local minima and fail to resolve one of the three clusters.  Hence the typical advice to run K-Means multiple times to prevent this failure.&lt;/p&gt;
+&lt;p&gt;An interesting feature that emerges with this interactive demo is that k-means fails to find three clusters.  With random starting values, it can fall into a local minima and fail to resolve one of the three clusters.  This justifies the typical advice to run K-Means multiple times to prevent this failure.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
