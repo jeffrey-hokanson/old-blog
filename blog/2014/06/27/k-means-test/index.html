@@ -1799,15 +1799,15 @@ In this notebook, I test these technologies with an example on <a href="http://e
 <div class="prompt input_prompt">
 In&nbsp;[53]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
 <span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 </div>
@@ -1816,8 +1816,8 @@ In&nbsp;[53]:
 <div class="prompt input_prompt">
 In&nbsp;[54]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span> <span class="c"># Number of clusters we will generate</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">100</span> <span class="c"># Number of points per cluster</span>
 <span class="n">sigma</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="c"># standard deviation</span>
@@ -1829,7 +1829,7 @@ In&nbsp;[54]:
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 </div>
@@ -1848,8 +1848,8 @@ In&nbsp;[54]:
 <div class="prompt input_prompt">
 In&nbsp;[55]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
     <span class="n">index</span> <span class="o">=</span> <span class="n">j</span><span class="o">*</span><span class="n">n</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
@@ -1859,7 +1859,7 @@ In&nbsp;[55]:
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -2063,8 +2063,8 @@ yKQYwImITIoBnIjIpBjAiYhMigGciMik/h++mUWUvEWotQAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">
 In&nbsp;[56]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">from</span> <span class="nn">scipy.cluster.vq</span> <span class="kn">import</span> <span class="n">kmeans2</span><span class="p">,</span> <span class="n">whiten</span>
 <span class="n">wdata</span> <span class="o">=</span> <span class="n">whiten</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="c"># fix seed for random sampling</span>
@@ -2073,7 +2073,7 @@ In&nbsp;[56]:
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 </div>
@@ -2082,8 +2082,8 @@ In&nbsp;[56]:
 <div class="prompt input_prompt">
 In&nbsp;[57]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
     <span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">label</span><span class="o">==</span><span class="n">j</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="s">&#39;.&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -2092,7 +2092,7 @@ In&nbsp;[57]:
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -2300,8 +2300,8 @@ bAAAAABJRU5ErkJggg==
 <div class="prompt input_prompt">
 In&nbsp;[58]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">from</span> <span class="nn">IPython.html.widgets</span> <span class="kn">import</span> <span class="n">interact</span>
 <span class="k">def</span> <span class="nf">sweep_sigma_kmeans</span><span class="p">(</span><span class="n">sigma</span><span class="p">):</span>
     <span class="c"># Fix random number generator to make plots consistent</span>
@@ -2318,7 +2318,8 @@ In&nbsp;[58]:
     <span class="n">wdata</span> <span class="o">=</span> <span class="n">whiten</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="n">centroid</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">kmeans2</span><span class="p">(</span><span class="n">wdata</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
     
-    <span class="c"># Build mapping between K-means and original labels (should use marriage algorithm)</span>
+    <span class="c"># Build mapping between K-means and original labels.</span>
+    <span class="c"># We should use the marriage algorithm here, but we simply take the largest pairing.</span>
     <span class="n">label_map</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
         <span class="n">local_labels</span> <span class="o">=</span> <span class="n">label</span><span class="p">[</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">j</span><span class="p">,</span><span class="n">n</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="n">n</span><span class="p">)]</span>
@@ -2341,7 +2342,7 @@ In&nbsp;[58]:
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -2560,11 +2561,7 @@ RU5ErkJggg==
     Out[58]:</div>
 
 
-<div class="output_text output_subarea output_pyout">
-<pre>
-&lt;function __main__.sweep_sigma_kmeans&gt;
-</pre>
-</div>
+<pre class="ipynb">&lt;function __main__.sweep_sigma_kmeans&gt;</pre>
 
 </div>
 
@@ -2597,8 +2594,8 @@ RU5ErkJggg==
 <div class="prompt input_prompt">
 In&nbsp;[59]:
 </div>
-<div class="inner_cell">
-    <div class="input_area">
+
+<div class="input_area box-flex1">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="o">%</span><span class="k">matplotlib</span> <span class="n">inline</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">StaticInteract</span><span class="p">,</span> <span class="n">RangeWidget</span><span class="p">,</span> <span class="n">RadioWidget</span>
 
@@ -2643,7 +2640,7 @@ In&nbsp;[59]:
 </pre></div>
 
 </div>
-</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -5977,6 +5974,9 @@ CF3IgBMEQXgUMuAEQRAehQw4QRCERyEDThAE4VHIgBMEQXgUMuAEQRAehQw4QRCER/n/AalgDQiN
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
+      <li class="post">
+          <a href="/blog/2014/07/01/cluster-RL14/">Improving a Clustering Algorithm of Rodriguez and Laio</a>
+      </li>
       <li class="post">
           <a href="/blog/2014/06/27/k-means-test/">Demonstrating IPython Interactive Features Using K-Means</a>
       </li>

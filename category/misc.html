@@ -1753,6 +1753,26 @@ jQuery(document).ready(function($) {
   		<article>
 <header>
       <h1 class="entry-title">
+        <a href="/blog/2014/07/01/cluster-RL14/">Improving a Clustering Algorithm of Rodriguez and Laio</a>
+      </h1>
+      <p class="meta"><time datetime="2014-07-01T00:00:00" pubdate>Jul 01, 2014</time></p>
+</header>
+
+  <div class="entry-content">
+
+<p>A recent Science paper by <a href="http://dx.doi.org/10.1126/science.1242072">Rodriguez and Laio</a> proposed a simple method for clustering using two heuristics: a local density $\rho_j$ and the minimum distance to a point of higher density $\delta_j$.  In their experiments, they then build clusters by noting the cluster centers are outliers that have simultaneously high $\rho_j$ and $\delta_j$.  Their definitions are remarkably simple.  The local density is given by</p>
+<p>$$ \rho_j = \sum_k H( d_c - d_{j,k} )  $$</p>
+<p>where $H$ is the Heavyside function (one if the argument is greater than zero, zero otherwise) and $d_{j,k}$ is the pairwise distance between points $j$ and $k$.  Then distance to a point with higher density is simply</p>
+<p>$$ \delta_j = \min_{j: \rho_k &gt; \rho_j} d_{j,k}.$$</p>
+<p>In this memo, we try their approach using a few datasets: the first two sets similar to their examples and then using a selection of the NIST handwriting databse.  Although they claim their approach is not sensitive cutoff $d_c$, every case tried here has sensitive dependence on $d_c$, producing duplicate cluster centers unless $d_c$ is choosen properly.  Using a smoother density kernel, such as the $\chi^2_p$ function with $p$ degrees of freedom, we can produce more robust cluster centers with fewer duplication.
+</div>
+  <footer>
+    <a rel="full-article" href="/blog/2014/07/01/cluster-RL14/">Read On &crarr;</a>
+  </footer>
+  		</article>
+  		<article>
+<header>
+      <h1 class="entry-title">
         <a href="/blog/2014/06/27/k-means-test/">Demonstrating IPython Interactive Features Using K-Means</a>
       </h1>
       <p class="meta"><time datetime="2014-06-27T00:00:00" pubdate>Jun 27, 2014</time></p>
@@ -1780,6 +1800,9 @@ In this notebook, I test these technologies with an example on <a href="http://e
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
+      <li class="post">
+          <a href="/blog/2014/07/01/cluster-RL14/">Improving a Clustering Algorithm of Rodriguez and Laio</a>
+      </li>
       <li class="post">
           <a href="/blog/2014/06/27/k-means-test/">Demonstrating IPython Interactive Features Using K-Means</a>
       </li>
