@@ -94,5 +94,5 @@ FEED_DOMAIN = SITEURL
 FEED_ATOM = 'atom.xml'
 
 
-# Search
+# SearchNG = u'en'
 SEARCH_BOX = True
