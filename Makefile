@@ -105,6 +105,11 @@ cf_upload: publish
 
 github: publish
 	ghp-import -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	git checkout master
+	echo "blog.hokanson.us" > CNAME
+	git add CNAME
+	git commit -m "Added back CNAME file"
 	git push origin $(GITHUB_PAGES_BRANCH)
+	git checkout source
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

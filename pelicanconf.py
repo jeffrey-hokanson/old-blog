@@ -23,7 +23,7 @@ MENUITEMS = [('Archives', '/archives.html'),
 NEWEST_FIRST_ARCHIVES = False
 
 
-
+PATH = 'content'
 
 #Github include settings
 #GITHUB_USER = 'jakevdp'
@@ -47,12 +47,15 @@ DEFAULT_PAGINATION = 10
 #STATIC_OUT_DIR = ''
 #STATIC_PATHS = ['images', 'figures', 'downloads']
 #FILES_TO_COPY = [('favicon.png', 'favicon.png')]
-EXTRA_PATH_METADATA = {
-		    'extra/CNAME': {'path': 'CNAME'},
-		        }
 
 # This requires Pelican 3.3+
 STATIC_PATHS = ['images', 'figures', 'downloads', 'favicon.png']
+
+STATIC_PATHS.append('extra/CNAME')
+
+EXTRA_PATH_METADATA = {
+		    'extra/CNAME': {'path': 'downloads/CNAME'},
+		        }
 
 CODE_DIR = 'downloads/code'
 NOTEBOOK_DIR = 'downloads/notebooks'
@@ -84,12 +87,12 @@ else:
 # Sharing
 #TWITTER_USER = 'jakevdp'
 GOOGLE_PLUS_USER = 'jeffreyhokanson'
-GOOGLE_PLUS_ONE = True
+GOOGLE_PLUS_ONE = False
 GOOGLE_PLUS_HIDDEN = False
 FACEBOOK_LIKE = False
-TWITTER_TWEET_BUTTON = True
-TWITTER_LATEST_TWEETS = True
-TWITTER_FOLLOW_BUTTON = True
+TWITTER_TWEET_BUTTON = False
+TWITTER_LATEST_TWEETS = False
+TWITTER_FOLLOW_BUTTON = False
 TWITTER_TWEET_COUNT = 3
 TWITTER_SHOW_REPLIES = 'false'
 TWITTER_SHOW_FOLLOWER_COUNT = 'true'
