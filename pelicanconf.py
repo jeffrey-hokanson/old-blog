@@ -6,7 +6,7 @@ AUTHOR = u'Jeffrey M. Hokanson'
 
 SITENAME = u'Applying Math'
 SITESUBTITLE = u'Stories from the trenches of science'
-SITEURL = '' # change in publishconf.py
+SITEURL = 'blog.hokanson.us' # change in publishconf.py
 
 # Times and dates
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
