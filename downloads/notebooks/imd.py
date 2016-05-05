@@ -58,7 +58,7 @@ def dok_gt(self, other):
 
 def dok_lt(self, other):
     """
-    Element-wise greater than
+    Element-wise less than
     """
     # First, store all the non-trivial elements
     ret = sp.dok_matrix(self, dtype = bool, copy = True)
